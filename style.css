@@ -1,0 +1,226 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#001219,#005f73,#0a9396);
+
+color:white;
+
+min-height:100vh;
+
+}
+
+nav{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 50px;
+
+background:rgba(0,0,0,.25);
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin-left:20px;
+
+font-size:18px;
+
+}
+
+.hero{
+
+height:85vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:55px;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+width:70%;
+
+margin-bottom:40px;
+
+}
+
+button{
+
+padding:18px 45px;
+
+font-size:22px;
+
+border:none;
+
+border-radius:50px;
+
+background:#00e676;
+
+color:white;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+background:#00c853;
+
+}
+.analyzer{
+
+padding:80px 20px;
+
+text-align:center;
+
+}
+
+.analyzer h2{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+}
+
+#imageUpload{
+
+margin-top:20px;
+
+font-size:18px;
+
+}
+
+#result{
+
+margin-top:30px;
+
+font-size:22px;
+
+color:#00ff99;
+
+}
+.card{
+
+background:white;
+
+color:black;
+
+margin:20px;
+
+padding:20px;
+
+border-radius:15px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+color:#00695c;
+
+}
+
+.card ul{
+
+padding-left:20px;
+
+}
+
+#dashboard{
+
+margin-top:30px;
+
+}
+.preview-card{
+
+background:white;
+
+padding:20px;
+
+border-radius:20px;
+
+margin:25px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+text-align:center;
+
+}
+
+#previewImage{
+
+width:100%;
+
+max-width:500px;
+
+border-radius:15px;
+
+margin-top:15px;
+
+}
+.location-card{
+    width:90%;
+    margin:40px auto;
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+#map{
+    width:100%;
+    height:350px;
+    margin-top:20px;
+    border-radius:15px;
+}
+
+#locationBtn{
+    margin-top:20px;
+    padding:15px 35px;
+    font-size:20px;
+    border:none;
+    border-radius:40px;
+    background:#00d26a;
+    color:white;
+    cursor:pointer;
+}
