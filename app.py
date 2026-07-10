@@ -15,6 +15,11 @@ client = genai.Client(api_key=API_KEY)
 @app.route("/")
 def home():
     return "AI Disaster Management Backend Running"
+    from flask import render_template
+
+@app.route("/")
+def home():
+    return render_template("index.html")
 
 @app.route("/analyze", methods=["POST"])
 def analyze():
@@ -119,8 +124,4 @@ Return ONLY JSON.
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
-    from flask import render_template
-
-@app.route("/")
-def home():
-    return render_template("index.html")
+    
