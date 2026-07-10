@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         try {
 
-            const response = await fetch("http://192.168.94.97:5000/analyze", {
+            const response = await fetch("https://ai-disaster-7.onrender.com/analyze", {
                 method: "POST",
                 body: formData
             });
