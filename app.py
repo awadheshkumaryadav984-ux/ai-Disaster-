@@ -7,7 +7,7 @@ import os
 app = Flask(__name__, static_folder="static", template_folder="templates")
 CORS(app)
 
-API_KEY = os.getenv("AQ.Ab8RN6IYu4nRikfnQdhBhKHRbWDGxk1faFk9vRiEYhtPo2llmg")
+API_KEY =os.getenv("GEMINI_API_KEY").
 
 client = genai.Client(api_key=API_KEY)
 
