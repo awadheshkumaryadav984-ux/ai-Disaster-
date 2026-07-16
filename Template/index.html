@@ -1,1 +1,134 @@
+DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Disaster Management</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav>
+
+<h2>🌍 AI Disaster Management</h2>
+
+<div>
+
+<a href="#">Home</a>
+
+<a href="#">Features</a>
+
+<a href="#">About</a>
+
+<a href="#">Contact</a>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<h1>AI Powered Disaster Response</h1>
+
+<p>
+Helping people survive disasters using Artificial Intelligence.
+</p>
+
+<button id="startBtn">
+Analyze Disaster
+</button>
+
+</section>
+<section class="analyzer">
+
+<h2>📸 AI Disaster Analyzer</h2>
+
+<p>Upload a disaster image for AI analysis.</p>
+
+<input type="file" id="imageUpload">
+
+<br><br>
+
+<button id="analyzeBtn">
+Analyze Image
+</button>
+<div class="preview-card">
+
+<h2>📷 Uploaded Image</h2>
+
+<img id="previewImage" src="" style="display:none;">
+
+</div>
+<div id="dashboard" style="display:none;">
+
+<div class="card">
+<h3>🌊 Disaster Type</h3>
+<p id="disasterType"></p>
+</div>
+
+<div class="card">
+<h3>🚨 Severity</h3>
+<p id="severity"></p>
+</div>
+
+<div class="card">
+<h3>🎯 Confidence</h3>
+<p id="confidence"></p>
+</div>
+
+<div class="card">
+<h3>📝 Summary</h3>
+<p id="summary"></p>
+</div>
+
+<div class="card">
+<h3>⚠ Immediate Actions</h3>
+<ul id="actions"></ul>
+</div>
+
+<div class="card">
+<h3>🛡 Safety Tips</h3>
+<ul id="tips"></ul>
+</div>
+
+<div class="card">
+<h3>📞 Emergency Contacts</h3>
+<ul id="contacts"></ul>
+</div>
+
+<div class="card">
+<h3>🧰 Equipment Needed</h3>
+<ul id="equipment"></ul>
+</div>
+
+</div>
+
+<div id="result"></div>
+
+</section>
+<section class="location-card">
+
+<h2>📍 Your Live Location</h2>
+
+<p id="locationText">
+Location not detected
+</p>
+
+<div id="map"></div>
+
+<button id="locationBtn">
+📍 Get My Location
+</button>
+
+</section>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh9f11RWDct2Wqso5deP4ZBn7_wWv8UkU"></script>
+
+</body>
+
+</html>
